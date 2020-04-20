@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Edward Davidson-->
+<!--S1604249-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4" >
+
+    <TextView
+        android:id="@+id/name_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDWARD DAVIDSON - S1604249" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="75dp"
+        android:paddingTop="75dp"
+        android:paddingRight="75dp"
+        android:paddingBottom="75dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/currentIncidentsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Incidents" />
+
+            <Button
+                android:id="@+id/roadworksBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Roadworks" />
+
+            <Button
+                android:id="@+id/plannedroadworksBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Planned Roadworks" />
+
+            <Button
+                android:id="@+id/searchBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search 🔍"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ExpandableListView
+                android:id="@+id/lvExp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
